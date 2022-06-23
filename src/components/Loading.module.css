@@ -1,0 +1,28 @@
+.loading{
+    height: 3px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.loading span{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 3px;
+    width: 5px;
+    background-color: blueviolet;
+    animation: load 1.5s alternate  ease-in-out infinite;
+}
+
+@keyframes load {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+        left: 100%;
+    }
+}
